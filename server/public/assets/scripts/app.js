@@ -1,1 +1,5 @@
-console.log('this is working');
+$(document).ready(function(){
+    $(".picture").on("click", function(){
+        $(".picture").
+    });
+});
