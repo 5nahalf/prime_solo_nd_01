@@ -3,9 +3,10 @@ var app = express();
 var path = require("path");
 app.set("port", (process.env.PORT || 5000));
 
-app.get("/*", function(request, response){
-    var file = request.param[0] || "views/index.html";
-    response.sendFile(path.join(__dirname, "./public", file));
+app.use(express.static(path.join(__dirname, './public')));
+
+app.get("/", function(request, response){
+    response.sendFile(path.join(__dirname, "./public", "views/index.html"));
 });
 
 app.listen(app.get("port"), function(){
