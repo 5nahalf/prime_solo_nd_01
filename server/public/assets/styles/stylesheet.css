@@ -34,23 +34,22 @@ body {
 }
 h1 {
     font-size: 58px;
-    margin-bottom: -20px;
+
 }
 
 h2 {
     font-size: 20px;
-    margin-bottom: -15px;
+
 }
 
 h3 {
     font-size: 26px;
-    margin-bottom: -10px;
+
 }
 
 h4 {
     font-size: 22px;
-    margin-bottom: 1px;
-}
+    }
 
 li {
     font-size: 18px;
@@ -59,12 +58,11 @@ li {
 a {
     font-size: 20px;
     text-align: left;
-    margin-bottom: 10px;
+
 }
 p {
     font-size:20px;
-    margin-bottom: 5px;
-}
+    }
 .split-para span {
     display: block;
     float: right;
