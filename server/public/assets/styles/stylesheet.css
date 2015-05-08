@@ -69,12 +69,10 @@ p {
     width: 20%;
     margin-left: 10px;
 }
-.hiddenImage
-{
-    display:none;
+.hiddenImage {
+    display: none;
 }
 
-.currentImage
-{
+.currentImage {
 
 }
