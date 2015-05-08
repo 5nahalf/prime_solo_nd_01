@@ -8,8 +8,17 @@ $(document).ready(function() {
     $('.papa').on("click", function () {
         $(this).slideUp();
     });
-    $('.exp').on("click", function () {
-        $(".westside").slideDown();
+    $('.prime').on("click", function () {
+        $(this).slideUp();
+    });
+    $('.dctc').on("click", function () {
+        $(this).slideUp();
+    });
+    $('.ses').on("click", function () {
+        $(this).slideUp();
+    });
+    $('.map').on("click", function () {
+        $("#content").children().slideDown();
     });
 
 });
