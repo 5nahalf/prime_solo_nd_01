@@ -18,7 +18,7 @@ $(document).ready(function() {
         $(this).slideUp();
     });
     $('.map').on("click", function () {
-        $("#content").children().slideDown();
+        $("#content").children().show();
     });
 
 });
