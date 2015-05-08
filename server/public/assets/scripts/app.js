@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(this).slideUp();
     });
     $('.exp').on("click", function () {
-        $(".westside",".aaa",".papa").slideDown();
+        $(".westside").slideDown();
     });
 
 });
