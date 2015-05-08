@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#erj').click(function () {
+    $('#erj').on("click", function () {
         $('#image img')
         each(function () {
             $(this).toggleClass('currentImage');
