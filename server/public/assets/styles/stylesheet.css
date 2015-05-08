@@ -1,13 +1,13 @@
 #erj {
     float: right;
 }
-/*#content {*/
-    /*margin-top: 40px;*/
-    /*margin-left: 50px;*/
-    /*margin-right: 50px;*/
-    /*padding: 10px 100px 10px 100px;*/
-    /*background-color: lightsalmon;*/
-    /*border-radius:30px;*/
+#content {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px 100px 10px 100px;
+    background-color: lightsalmon;
+    border-radius:30px;
 /*}*/
 /*#edu {*/
     /*border-radius: 15px;*/
