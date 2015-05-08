@@ -7,27 +7,8 @@
     margin-right: 50px;
     padding: 10px 100px 10px 100px;
     border-radius:30px;
-/*}*/
-/*#edu {*/
-    /*border-radius: 15px;*/
-    /*padding: 0px 7px 7px 7px;*/
-    /*background-color: wheat;*/
-/*}*/
-/*#pro {*/
-    /*border-radius: 15px;*/
-    /*padding: 0px 7px 7px 7px;*/
-    /*background-color: wheat;*/
-/*}*/
-/*#exp {*/
-    /*border-radius: 15px;*/
-    /*padding: 0px 7px 7px 7px;*/
-    /*background-color: wheat;*/
-/*}*/
-/*#social {*/
-    /*border-radius: 15px;*/
-    /*padding: 10px 10px 10px 10px;*/
-    /*background-color: wheat;*/
-/*}*/
+}
+
 body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
