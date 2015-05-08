@@ -8,5 +8,8 @@ $(document).ready(function() {
     $('.papa').on("click", function () {
         $(this).slideUp();
     });
+    $('.exp').on("click", function () {
+        $(".westside",".aaa",".papa").slideDown();
+    });
 
 });
