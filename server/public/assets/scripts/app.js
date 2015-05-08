@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $(".picture").on("click", function(){
-        alert("stop touching me!");
+    $(".click").on("click", function(){
+        $(this).toggleClass('currentImage');
+        $(this).toggleClass('hiddenImage');
     });
 });
