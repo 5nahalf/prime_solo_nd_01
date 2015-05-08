@@ -1,6 +1,12 @@
 $(document).ready(function() {
-    $('.map').on("click", function () {
-        $(".map").slideUp();
+    $('.westside').on("click", function () {
+        $(this).slideUp();
+    });
+    $('.aaa').on("click", function () {
+        $(this).slideUp();
+    });
+    $('.papa').on("click", function () {
+        $(this).slideUp();
     });
 
 });
