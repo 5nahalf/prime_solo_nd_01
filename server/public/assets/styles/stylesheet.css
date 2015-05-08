@@ -1,5 +1,5 @@
-#erj {
-    float: right;
+/*#erj {*/
+    /*float: right;*/
 }
 /*#content {*/
     /*margin-top: 40px;*/
@@ -68,11 +68,4 @@ p {
     float: right;
     width: 20%;
     margin-left: 10px;
-}
-.hiddenImage {
-    display: none;
-}
-
-.currentImage {
-
 }
