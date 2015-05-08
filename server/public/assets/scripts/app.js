@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.map').on("click", function () {
-        $("#content").slideUp();
+        $(".map").slideUp();
     });
+
 });
