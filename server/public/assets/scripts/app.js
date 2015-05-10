@@ -22,9 +22,6 @@ $(document).ready(function() {
             url: '/template',
             success: function(response) {
                 $('#skillz').append(response);
-                var child = $('#skillz').children().last();
-                child.hide();
-                child.fadeIn();
             }
         });
     });
