@@ -15,6 +15,6 @@ app.listen(app.get("port"), function(){
 app.get('/template', function(request, response){
     response.sendFile(path.join(__dirname, './public/views/template/add.html'));
 });
-app.get('/data', function(request, response){
+app.get('/template', function(request, response){
     response.sendFile(path.join(__dirname, './public/views/template/skillz.json'));
 });
