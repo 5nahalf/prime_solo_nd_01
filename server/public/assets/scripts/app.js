@@ -17,8 +17,15 @@ $(document).ready(function() {
     $('.ses').on("click", function () {
         $(this).slideUp();
     });
-    $('.map').on("click", function () {
-        $("#content").children().show();
+    $('.map').on('click', function(){
+        $.ajax({
+            url: '/template',
+            success: function(response) {
+                $('#skillz').append(response);
+                var child = $('#skillz').children().last();
+                child.hide();
+                child.fadeIn();
+            }
+        });
     });
-
 });

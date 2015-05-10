@@ -12,3 +12,6 @@ app.get("/", function(request, response){
 app.listen(app.get("port"), function(){
     console.log("app is running on port", app.get("port"));
 });
+app.get('/template', function(request, response){
+    response.sendFile(path.join(__dirname, './public/views/template/add.html'));
+});
