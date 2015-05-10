@@ -4,14 +4,15 @@ var path = require("path");
 app.set("port", (process.env.PORT || 5000));
 
 app.use(express.static(path.join(__dirname, './public')));
+
 app.get('/template', function(request, response){
     response.sendFile(path.join(__dirname, './public/views/template/add.html'));
 });
 app.get('/data', function(request, response){
-    response.sendFile(path.join(__dirname, './public/assets/data/skillz.json'));
+    response.sendFile(path.join(__dirname, './public/assets/data/skillz-data.json'));
 });
 
-app.get("/", function(request, response){
+app.get("/*", function(request, response){
     response.sendFile(path.join(__dirname, "./public", "views/index.html"));
 });
 

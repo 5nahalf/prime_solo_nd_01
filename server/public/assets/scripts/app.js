@@ -1,4 +1,4 @@
-function map(){
+function getData(){
     $.ajax({
         url: '/data',
         data: JSON.stringify(),
@@ -9,6 +9,14 @@ function map(){
 }
 
 $(document).ready(function() {
+    $('.getData').on('click', function(){
+        $.ajax({
+            url: '/template',
+            success: function(response) {
+                $('#skillz').append(response);
+            }
+        });
+    });
     $('.westside').on("click", function () {
         $(this).slideUp();
     });
@@ -27,12 +35,5 @@ $(document).ready(function() {
     $('.ses').on("click", function () {
         $(this).slideUp();
     });
-    $('.map').on('click', function(){
-        $.ajax({
-            url: '/template',
-            success: function(response) {
-                $('#skillz').append(response);
-            }
-        });
-    });
+
 });
