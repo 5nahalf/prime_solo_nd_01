@@ -1,6 +1,6 @@
 function map(){
     $.ajax({
-        url: '../views/template',
+        url: '/data',
         data: JSON.stringify(),
         success: function(response) {
             $('#skillz').append(response);
