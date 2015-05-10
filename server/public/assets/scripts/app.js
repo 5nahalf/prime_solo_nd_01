@@ -3,6 +3,7 @@ function getData(){
         url: '/data',
         data: JSON.stringify(),
         success: function(response) {
+            console.log(response);
             $('#skillz').append(response);
         }
     });
