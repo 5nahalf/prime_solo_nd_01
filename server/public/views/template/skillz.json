@@ -1,0 +1,9 @@
+{
+  "skillz" : [
+    {"skill": "AV setup and repair", "exp": "15 years experience in setting up sound, lighting, and video systems."},
+    {"skill": "Computer repair", "exp": "6 years building, diagnosing, and repairing laptops, desktops, printers, scanners, and most other computer systems."},
+    {"skill": "General construction", "exp": "Proficient in building, modeling and repairing home contruction."},
+    {"skill": "Small engine repair", "exp": "10 years repairing small engines in lawn mowers, weed whips, snow blowers, and Honda civics."},
+    {"skill": "Event DJ", "exp": "2 years as a wedding and company party DJ."}
+  ]
+}

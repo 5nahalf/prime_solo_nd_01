@@ -1,3 +1,13 @@
+function map(){
+    $.ajax({
+        url: '../views/template',
+        data: JSON.stringify(),
+        success: function(response) {
+            $('#skillz').append(response);
+        }
+    });
+}
+
 $(document).ready(function() {
     $('.westside').on("click", function () {
         $(this).slideUp();
