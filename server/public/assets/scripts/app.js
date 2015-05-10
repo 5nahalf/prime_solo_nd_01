@@ -3,7 +3,7 @@ function map(){
         url: '../views/template',
         data: JSON.stringify(),
         success: function(response) {
-            $('#skill').append(response);
+            $('#skillz').append(response);
         }
     });
 }
@@ -31,7 +31,7 @@ $(document).ready(function() {
         $.ajax({
             url: '/template',
             success: function(response) {
-                $('#skill').append(response);
+                $('#skillz').append(response);
             }
         });
     });
