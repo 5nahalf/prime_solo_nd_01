@@ -5,23 +5,13 @@ app.set("port", (process.env.PORT || 5000));
 
 app.use(express.static(path.join(__dirname, './public')));
 
-//app.get('/template', function(request, response){
-//    response.sendFile(path.join(__dirname, './public/views/template/add.html'));
-//});
-//app.get('/data', function(request, response){
-//    response.sendFile(path.join(__dirname, './public/assets/data/skillz-data.json'));
-//});
+app.get('/template', function(request, response){
+    response.sendFile(path.join(__dirname, './public/views/template/add.html'));
+});
 app.get('/data', function(request, response){
-    console.log("/data function is happening");
-    var file = '/assets/data/skillz-data.json';
-    response.sendFile(path.join(__dirname, './public', file));
+    response.sendFile(path.join(__dirname, './public/assets/data/skillz-data.json'));
 });
 
-app.get('/template', function(request, response){
-    console.log("/template function is happening");
-    var file = '/views/template/add.html';
-    response.sendFile(path.join(__dirname, './public', file));
-});
 app.get("/*", function(request, response){
     response.sendFile(path.join(__dirname, "./public", "views/index.html"));
 });

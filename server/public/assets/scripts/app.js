@@ -1,12 +1,24 @@
+var skillbase;
+var templateHTML;
 function getData(){
     $.ajax({
         url: '/data',
         data: JSON.stringify(),
         success: function(response) {
-            console.log(response);
-            $('#skillz').append(response);
+            skillbase = response;
+            addskills();
         }
     });
+}
+
+function addskills(){
+    console.log("yea, adding skills works");
+    for(var i = 0; i < skillbase.skillz.length; i++){
+        console.log("Append ran");
+        $("#skillz").append(templateHTML);
+        $('#skillz').children().last().children(".skill").append(skillbase.skillz[i].skill);
+        $('#skillz').children().last().children(".exp").append(skillbase.skillz[i].exp);
+    }
 }
 
 $(document).ready(function() {
@@ -14,7 +26,8 @@ $(document).ready(function() {
         $.ajax({
             url: '/template',
             success: function(response) {
-                $('#skillz').append(response);
+                templateHTML = response;
+                getData();
             }
         });
     });
