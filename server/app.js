@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var path = require("path");
+var hello = require("./hello")
 app.set("port", (process.env.PORT || 5000));
 
 app.use(express.static(path.join(__dirname, './public')));
@@ -21,9 +22,11 @@ app.get('/template', function(request, response){
     console.log("/template function is happening");
     var file = '/views/template/add.html';
     response.sendFile(path.join(__dirname, './public', file));
+    //response.send(hello());
 });
 app.get("/*", function(request, response){
     response.sendFile(path.join(__dirname, "./public", "views/index.html"));
+
 });
 
 app.listen(app.get("port"), function(){
